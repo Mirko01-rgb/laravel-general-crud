@@ -48,10 +48,10 @@ class TestController extends Controller
   public function update(Request $request, $id) {
     //dd($request -> all() ,  $id);
     $validate = $request -> validate([
-      'team1' => 'required|max:255',
-      'team2' => 'required|max:255',
-      'point1' => 'required|max:11',
-      'point2' => 'required|max:11',
+      'team1' => 'required|string|min:2|max:255',
+      'team2' => 'required|string|min:2|max:255',
+      'point1' => 'required|integer|min:0|max:100',
+      'point2' => 'required|integer|min:0|max:100',
       'result' => 'required|boolean',
     ]);
     //dd($validate, $id);
