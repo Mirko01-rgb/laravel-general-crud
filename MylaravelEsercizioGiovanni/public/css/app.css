@@ -1,0 +1,18 @@
+body {
+  background-color: coral;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+.btn {
+  margin-bottom: 30px;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
